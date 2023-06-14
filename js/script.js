@@ -2,7 +2,6 @@
 
 (function($){
     $(document).ready(function(){
-
         setTimeout(function(){
             $('body').removeClass('inactive'); 
           }, 300);

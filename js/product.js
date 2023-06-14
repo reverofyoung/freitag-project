@@ -4,13 +4,13 @@ $(document).ready(function(){
         $('body').removeClass('inactive'); 
     }, 300);
   
-    TweenMax.set($('.logo'),{css:{x: -20 + 'vw', autoAlpha: 0}});
-    TweenMax.set($('.menu_toggle'),{css:{x: -20 + 'vw', autoAlpha: 0}});
-    TweenMax.set($('.sns_wrap'),{css:{x: -20 + 'vw', autoAlpha: 0}});
+    gsap.set($('.logo'),{css:{x: -20 + 'vw', autoAlpha: 0}});
+    gsap.set($('.menu_toggle'),{css:{x: -20 + 'vw', autoAlpha: 0}});
+    gsap.set($('.sns_wrap'),{css:{x: -20 + 'vw', autoAlpha: 0}});
   
-    TweenMax.to($('.logo'), 1, {css: {x:0, autoAlpha: 1}});
-    TweenMax.to($('.menu_toggle'), 1, {css: {x:0, autoAlpha: 1}, delay: 0.3});
-    TweenMax.to($('.sns_wrap'), 1, {css: {x:0, autoAlpha: 1}, delay:0.3});  
+    gsap.to($('.logo'), 1, {css: {x:0, autoAlpha: 1}});
+    gsap.to($('.menu_toggle'), 1, {css: {x:0, autoAlpha: 1}, delay: 0.3});
+    gsap.to($('.sns_wrap'), 1, {css: {x:0, autoAlpha: 1}, delay:0.3});  
       
     var $up = $('.product_box');
     var $upBox = $up.find('div');

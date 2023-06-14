@@ -20,4 +20,3 @@ ___index, story, process, product___ 총 네 가지의 화면으로 구성되어
 
 
 [View Now!](https://to-ql.github.io/freitag-project/)
-
