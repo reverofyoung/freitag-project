@@ -1,0 +1,146 @@
+.menu_toggle {
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/*메뉴 버튼 클릭 후의 변화*/
+.menu_toggle.on .one {
+  background-color: #fff;
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu_toggle.on .two {
+  opacity: 0;
+}
+.menu_toggle.on .three {
+  background-color: #fff;
+  -moz-transform: rotate(-45deg) translate(5px, -7px);
+  -ms-transform: rotate(-45deg) translate(5px, -7px);
+  -webkit-transform: rotate(-45deg) translate(5px, -7px);
+  transform: rotate(-45deg) translate(5px, -7px);
+}
+
+/*메뉴 버튼 속성*/
+.one,
+.two,
+.three {
+  width: 50%;
+  height: 4px;
+  background: #000;
+  margin: 5px auto;
+  transition-duration: 0.3s;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+}
+
+/*메뉴 리스트*/
+.nav {
+  position: fixed;
+  display: block;
+  width: 0%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 10;
+  background-color: #000;
+  transition: opacity 0.3s, visibility 0.4s, width 0.4s;
+}
+/*메뉴 열림*/
+.nav.on {
+  visibility: visible;
+  width: 100%;
+  opacity: 1;
+}
+.nav.on li {
+  opacity: 0;
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+.nav.on li:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.nav.on li:nth-of-type(3) {
+  animation-delay: 0.45s;
+}
+.nav.on li:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+
+.nav ul {
+  position: relative;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav ul li {
+  display: block;
+  margin-bottom: 80px;
+  white-space: nowrap;
+}
+.nav ul a {
+  display: inline-block;
+  width: auto;
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.nav ul a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    margin-left: 20%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+/* Mobile Device*/
+@media all and (max-width: 767px) {
+  .nav ul li {
+    margin-bottom: 40px;
+  }
+
+  .nav ul a {
+    font-size: 25px;
+  }
+}
+
+/* Tablet*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .nav ul li {
+    margin-bottom: 50px;
+  }
+
+  .nav ul a {
+    font-size: 40px;
+  }
+}
+
+/* PC Desktop */
+@media all and (min-width: 1024px) {
+  .nav ul li {
+    margin-bottom: 55px;
+  }
+
+  .nav ul a {
+    font-size: 60px;
+  }
+}

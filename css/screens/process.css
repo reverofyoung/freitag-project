@@ -1,0 +1,137 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.section_wrap {
+  width: 1000%;
+  height: 600%;
+}
+#section {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
+.inactive {
+  visibility: hidden !important;
+}
+/*타이틀*/
+.title {
+  top: 0;
+}
+
+/* 타이틀 이미지 */
+.title .title_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: auto;
+}
+.title .title_img img {
+  width: 100%;
+}
+
+/* 타이틀 스토리 */
+.title .title_story {
+  position: absolute;
+  left: 10%;
+  top: 55%;
+  width: 32%;
+  height: auto;
+  background: #fff;
+}
+.title .title_story p {
+  padding: 40px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* 타이틀 텍스트 */
+.title .title_text {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+.title .title_text p {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/*제작과정*/
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content article {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 60%;
+}
+
+.content01 {
+  top: 100%;
+}
+.content02 {
+  top: 200%;
+}
+.content03 {
+  top: 300%;
+}
+.content04 {
+  top: 400%;
+}
+.content05 {
+  top: 500%;
+}
+
+/*이미지*/
+.content .img_box {
+  width: 45%;
+}
+.content .img_box img {
+  width: 100%;
+}
+
+/*텍스트*/
+.content .text_box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.content .text_box div {
+  margin-bottom: 50px;
+}
+.content .text_box h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.content .text_box .italic {
+  font-style: italic;
+}
+.content .text_box p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.text_box {
+  opacity: 0;
+  margin-right: 30px;
+  transition: opacity 0.4s, margin-right 0.35s;
+}
+.text_box.on {
+  opacity: 1;
+  margin-right: 0;
+}
+
+.more_product-btn {
+  font-size: 13px;
+}
+
+.more_product-btn:hover {
+  color: red;
+}

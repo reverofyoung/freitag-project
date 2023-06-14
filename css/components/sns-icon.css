@@ -1,0 +1,26 @@
+.sns_wrap {
+  position: fixed;
+  width: 80px;
+  bottom: 5%;
+  z-index: 10;
+}
+.sns_wrap ul {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.sns_wrap ul li {
+  margin: 10px auto;
+  text-align: center;
+}
+.sns_wrap a {
+  font-size: 30px;
+  color: #000;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.sns_wrap a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}

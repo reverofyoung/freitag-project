@@ -1,0 +1,151 @@
+body {
+  background-color: #f7f6f4;
+  width: 100%;
+  height: 100%;
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*스토리*/
+#story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#story > div {
+  display: flex;
+  width: 60%;
+  height: auto;
+}
+
+.story1 {
+  top: 0;
+}
+.story2 {
+  top: 100%;
+}
+
+.text_box {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+}
+
+.text_box .text_top {
+  position: relative;
+  width: 60%;
+  height: auto;
+  font-size: 40px;
+  font-weight: bold;
+}
+.text_box .text_mid {
+  width: 78%;
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text_box .text_bottom {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f7f6f4;
+  -webkit-text-stroke: 1px #000;
+  text-align: right;
+}
+
+.img_wrap {
+  width: 27%;
+  height: 100%;
+  padding-top: 130px;
+}
+.img_wrap img {
+  width: 100%;
+}
+
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

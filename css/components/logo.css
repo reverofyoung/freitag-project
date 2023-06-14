@@ -1,0 +1,26 @@
+.logo {
+  position: fixed;
+  top: 10%;
+  width: 80px;
+  z-index: 1000;
+}
+.logo img {
+  width: 100%;
+}
+
+/* Mobile Device*/
+@media all and (max-width: 767px) {
+  .logo {
+    /* left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(90deg);*/
+  }
+}
+
+/* Tablet*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* PC Desktop */
+@media all and (min-width: 1024px) {
+}
