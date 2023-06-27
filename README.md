@@ -27,4 +27,4 @@ ___index, story, process, product___ 총 네 가지의 화면으로 구성되어
 - 2023.06 라이브러리 업데이트 버전 반영 (TweenMax -> gsap)
 
 
-### [View Now!](https://to-ql.github.io/freitag-project/)
+### [View Now!](https://reverofyoung.github.io/freitag-project/)
